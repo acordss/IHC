@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Securerch App</title>
+		<meta charset="UTF-8" />
+
+		<!-- Fuentes -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+			rel="stylesheet" />
+
+		<!-- Mapa  -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+		<script src="https://unpkg.com/leaflet-geocoder/dist/leaflet-geocoder.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+		<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+		<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+		<!-- Estilos  -->
+		<link rel="stylesheet" href="../styles/styles.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__nav">
+				<div class="nav__logo-container">
+					<a class="nav__link--image" href="#Inicio"><img src="../images/logo.png" /></a>
+				</div>
+				<div class="nav__ul-container">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="nav__link" href="#Nosotros">Nosotros</a></li>
+						<li class="nav__item"><a class="nav__link" href="#Comunidad">Comunidad</a></li>
+						<li class="nav__item"><a class="nav__link" href="#Servicios">Servicios</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="home__section" id="Inicio">
+				<div class="home__section--container">
+					<div class="home__text--container">
+						<h2>
+							<strong>Mantente</strong> seguro<br /><strong>Cuídate</strong> del peligro<br /><strong>Informa</strong> a
+							los demás
+						</h2>
+						<p>
+							¡Anda con cuidado en Surco con Securerch!<br />Alquila nuestras herramientas de alta calidad, diseñados
+							para alertar y prevenir accidentes. ¡Empieza ya!
+						</p>
+						<a class="signup__link" href="registro.html" class="header-link">Unirse</a>
+					</div>
+					<div class="home__img--container">
+						<img src="../images/surco.jpg" />
+					</div>
+				</div>
+			</div>
+
+			<div class="nosotros__section" id="Nosotros">
+				<div class="nosotros__title">
+					<h2>Nosotros</h2>
+				</div>
+				<div class="nosotros__section-container">
+					<div class="nosotros__text-container">
+						<h2>¿Quienes somos?</h2>
+						<p>
+							Nuestro equipo conformado por estudiantes de la UPC hemos decidido crear la aplicación "Securerch App".
+							Esta aplicación tendrá como objetivo preservar la seguridad de los ciudadanos al ir a zonas de Surco que
+							se vean peligrosas o que sean poco conocidas por los usuarios.
+						</p>
+					</div>
+					<div class="nosotros__text-container">
+						<h2>Misión</h2>
+						<p>
+							Ofrecer una mayor seguridad e información a todas las personas que no tengan mucho conocimiento acerca de
+							la seguridad del distrito de Surco. Ayudando a las personas a no arriesgarse a perder sus bienes
+							materiales o en el peor de los casos hasta su propia vida.
+						</p>
+					</div>
+					<div class="nosotros__text-container">
+						<h2>Visión</h2>
+						<p>
+							Consolidarnos como una aplicación confiable y segura para los usuarios. Aspirando a poder extendernos en
+							más distritos del Perú que requieran de ayuda para ofrecer más seguridad a muchas más personas.
+						</p>
+					</div>
+				</div>
+
+				<div class="verMas--container">
+					<div class="button--container">
+						<button id="ver-mas">Ver Más</button>
+					</div>
+				</div>
+
+				<div id="integrantes-grupo" class="integrantes__section hidden">
+					<div class="integrantes__section-container filaArriba">
+						<div class="integrante__card">
+							<div class="integrante__imagen--container">
+								<img src="../images/integrante01.png" alt="" />
+							</div>
+							<h5>Christian Avilés</h5>
+							<p class="p-normal">
+								"Soy estudiante de Ingeniería de Sistemas de Información en la UPC y programo desde niño, con
+								experiencia principal en C#"
+							</p>
+						</div>
+						<div class="integrante__card">
+							<div class="integrante__imagen--container">
+								<img src="../images/integrante02.png" alt="" />
+							</div>
+							<h5>Renzo Carril</h5>
+							<p class="p-normal">
+								"Soy estudiante de Ingeniería de Software en la UPC, apasionado por la tecnología y listo para crear el
+								futuro con proyectos innovadores"
+							</p>
+						</div>
+						<div class="integrante__card">
+							<div class="integrante__imagen--container">
+								<img src="../images/integrante03.png" alt="" />
+							</div>
+							<h5>Pedro Huaman</h5>
+							<p class="p-normal">
+								"Soy estudiante de Ingeniería de Sistemas en la UPC, proactivo, reflexivo y con juicio crítico para
+								aportar al trabajo en equipo"
+							</p>
+						</div>
+					</div>
+					<div class="integrantes__section-container filaAbajo">
+						<div class="integrante__card">
+							<div class="integrante__imagen--container">
+								<img src="../images/integrante05.png" alt="" />
+							</div>
+							<h5>Gianfranco Pintado</h5>
+							<p class="p-normal">
+								"Soy estudiante de Ingeniería de Sistemas, preciso en la resolución de problemas y comprometido con la
+								calidad"
+							</p>
+						</div>
+						<div class="integrante__card">
+							<div class="integrante__imagen--container">
+								<img src="../images/integrante04.png" alt="" />
+							</div>
+							<h5>Tiago Torpoco</h5>
+							<p class="p-normal">
+								"Soy estudiante de Ingeniería de Sistemas, amante del fútbol, básquet y la tecnología, con el objetivo
+								de trabajar en una empresa reconocida"
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="comunidad__section" id="Comunidad">
+				<div class="comunidad__title">
+					<h2>Comunidad</h2>
+				</div>
+				<div class="comunidad__section-container">
+					<div class="comunidad__text-container verde">
+						<h2>Zona A</h2>
+						<p class="p-normal">
+							ÚLTIMO COMENTARIO
+							<br />
+							Jose Carlos Arriaga
+							<br />
+							hola, cuando esta caminando observe que a una señora le estaba siguiendo alguien sospechoso......
+						</p>
+					</div>
+					<div class="comunidad__text-container azul">
+						<h2>Zona B</h2>
+						<p class="p-normal">
+							ÚLTIMO COMENTARIO
+							<br />
+							Ana Torres
+							<br />
+							El barrio ha cambiado mucho. Recuerdo que antes era más tranquilo, pero ahora me siento insegura cuando
+							tengo que caminar sola.
+						</p>
+					</div>
+					<div class="comunidad__text-container verde">
+						<h2>Zona C</h2>
+						<p class="p-normal">
+							ÚLTIMO COMENTARIO
+							<br />
+							María González
+							<br />
+							Siempre me ha dado un poco de miedo pasar por esa calle. He escuchado muchas historias de robos en la
+							zona, así que trato de evitarla por la noche.
+						</p>
+					</div>
+					<div class="comunidad__text-container azul">
+						<h2>Zona D</h2>
+						<p class="p-normal">
+							ÚLTIMO COMENTARIO
+							<br />
+							Carlos Méndez
+							<br />
+							El otro día vi a un par de chicos merodeando cerca de la tienda. No sé, pero algo en su actitud me pareció
+							sospechoso. Prefiero no arriesgarme.
+						</p>
+					</div>
+					<div class="comunidad__text-container verde">
+						<h2>Zona E</h2>
+						<p class="p-normal">
+							ÚLTIMO COMENTARIO
+							<br />
+							Javier López
+							<br />
+							La zona del parque se ve bastante descuidada. He notado que hay personas que parecen no tener buenas
+							intenciones, especialmente después del anochecer.
+						</p>
+					</div>
+					<div class="comunidad__text-container azul">
+						<h2>Zona F</h2>
+						<p class="p-normal">
+							ÚLTIMO COMENTARIO
+							<br />
+							Lucía Pérez
+							<br />
+							He escuchado que en esa área hay un problema serio con las pandillas. No sé si es cierto, pero he decidido
+							no llevar a mis hijos a jugar allí.
+						</p>
+					</div>
+				</div>
+				<div class="comunidad__button-container">
+					<button class="boton-verde boton-comunidad">Ver todo</button>
+				</div>
+			</div>
+
+			<div class="servicios__section" id="Servicios">
+				<div class="servicios__title">
+					<h2>Servicios</h2>
+				</div>
+				<div id="contenedorMapa">
+					<div id="map"></div>
+					<form class="formulario__control-mapa">
+						<h3>Control del mapa</h3>
+						<label class="formulario__label"
+							>Origen
+							<input type="text" id="lugarInicio" class="formulario__input" />
+						</label>
+						<label class="formulario__label"
+							>Destino
+							<input type="text" id="lugarDestino" class="formulario__input" />
+						</label>
+						<button id="btnDestino" class="formulario__control-mapa--button" onclick="irADestino()">Ver ruta</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<script type="text/javascript" src="../scripts/scriptMapa.js"></script>
+	</body>
+</html>

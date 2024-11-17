@@ -1,0 +1,83 @@
+[
+    {
+        "lng": -12.1102137,
+        "lat": -76.982390,
+        "precision": 500,
+        "peligrosidad": 1.25,
+        "comentarios": [
+            {
+                "nombre": "Jose Carlos Arriaga",
+                "hora": "13:59",
+                "comentario": "hola, cuando esta caminando observe que a una señora le estaba siguiendo alguien sospechoso......"
+                
+            }
+        ]
+    },
+    {
+        "lng": -12.104119,
+        "lat": -76.963069,
+        "precision": 250,
+        "peligrosidad": 2.20,
+        "comentarios": [
+            {
+                "nombre": "Ana Torres",
+                "hora": "18:30",
+                "comentario": "El barrio ha cambiado mucho. Recuerdo que antes era más tranquilo, pero ahora me siento insegura cuando tengo que caminar sola."
+                
+            }
+        ]
+    },
+    {
+        "lng": -12.109083, 
+        "lat": -76.964657,
+        "precision": 700,
+        "peligrosidad": 5.00,
+        "comentarios": [
+            {
+                "nombre": "María González",
+                "hora": "17:50",
+                "comentario": "Siempre me ha dado un poco de miedo pasar por esa calle. He escuchado muchas historias de robos en la zona, así que trato de evitarla por la noche."
+            }
+        ]
+    },
+    {
+        "lng": -12.127070, 
+        "lat": -76.973981,
+        "precision": 250,
+        "peligrosidad": 4.15,
+        "comentarios": [
+            {
+                "nombre": "Carlos Méndez",
+                "hora": "19:25",
+                "comentario": "El otro día vi a un par de chicos merodeando cerca de la tienda. No sé, pero algo en su actitud me pareció sospechoso. Prefiero no arriesgarme."
+            }
+        ]
+    },
+
+    {
+        "lng": -12.135158, 
+        "lat": -77.015126,
+        "precision": 700,
+        "peligrosidad": 7.75,
+        "comentarios": [
+            {
+                "nombre": "Javier López",
+                "hora": "1:35",
+                "comentario": "La zona del parque se ve bastante descuidada. He notado que hay personas que parecen no tener buenas intenciones, especialmente después del anochecer."
+            }
+        ]
+    },
+    {
+        "lng": -12.111270,
+        "lat": -76.987681,
+        "precision": 250,
+        "peligrosidad": 9.25,
+        "comentarios": [
+            {
+                "nombre": "Lucía Pérez",
+                "hora": "13:40",
+                "comentario": "He escuchado que en esa área hay un problema serio con las pandillas. No sé si es cierto, pero he decidido no llevar a mis hijos a jugar allí."
+            }
+        ]
+    }
+]

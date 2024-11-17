@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Securerch App: Registro</title>
+		<meta charset="UTF-8" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+			rel="stylesheet" />
+
+		<link rel="stylesheet" href="../styles/styles.css" />
+	</head>
+
+	<body>
+		<div class="register__section">
+			<div class="home__link">
+				<a class="nav__link--image" href="../index.html"><img src="../images/logo.png" /></a>
+			</div>
+			<div class="register__section-container">
+				<form action="/registro" method="post" class="formulario__register" id="formRegistro">
+					<h2>Crea tu cuenta de Securerch</h2>
+					<input type="text" name="nombre" placeholder="Ingrese su nombre" />
+					<input type="text" name="apellido"" placeholder="Ingrese su apellido" >
+					<input type="email" name="email" placeholder="Ingrese su correo" />
+					<input type="password" name="password" placeholder="Ingrese su contraseña" />
+					<input type="password" name="validarPassword" placeholder="Repita su contraseña" />
+					<div class="button__register--container">
+						<button id="submit">Ingresar</button>
+					</div>
+					<div class="login__link">
+						<p id="registrar"><a href="ingreso.html">Iniciar sesión</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="../scripts/scripts.js"></script>
+	</body>
+</html>
